@@ -224,7 +224,7 @@ main {
 .cards>img {
     width: 18%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 11px;
 }
 
 .nome-card {
