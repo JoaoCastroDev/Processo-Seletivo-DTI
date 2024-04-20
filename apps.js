@@ -43,9 +43,12 @@ function btnEnviar() {
         return melhor;
     });
 
+
+    document.getElementById("card-resultado").style.display = "flex";
     document.getElementById("resultadoMelhor").innerHTML = `O melhor petshop é ${melhorPetshop.nome} com o preço total de R$ ${melhorPetshop.custoTotal.toFixed(2)}!`;
     verificaCampos(dataInput, qtdCaesPequenos, qtdCaesGrandes);
 }
+
 
 function verificaCampos(dataInput, qtdCaesPequenos, qtdCaesGrandes) {
     if (dataInput === '' || isNaN(qtdCaesPequenos) || isNaN(qtdCaesGrandes)) {

@@ -26,15 +26,28 @@ body {
     overflow: hidden;
     font-family: "Montserrat", sans-serif;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
 
+
+header {
+    width: 100%;
+    height: 160px;
+    background: #007ed5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
 main {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 160px);
 }
+
 
 .titulo {
     width: 100%;
@@ -57,7 +70,6 @@ main {
 
 .main-formulario {
     width: 100%;
-    height: 100%;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -76,7 +88,7 @@ main {
 }
 
 .divformulario {
-    background:lightgray;
+    background: lightgray;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -238,9 +250,9 @@ main {
 
 .card-resultado {
     margin-top: 30px;
+    display: none;
     width: 100%;
     height: 135px;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -255,17 +267,6 @@ main {
     margin-left: 5%;
 }
 
-.cabecalho {
-    width: 100%;
-    height: 15%;
-    position: absolute;
-    background: #007ed5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid black;
-}
 
 .botao-contain {
     width: 100%;
@@ -273,4 +274,46 @@ main {
     gap: 10px;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+    .main-formulario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .conteudo-formulario {
+        width: 100%;
+    }
+
+    .itens {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    body {
+        overflow: auto;
+    }
+    .main-formulario {
+        margin-top: 10px;
+    }
+    .cards {
+        height: 140px;
+    }
 }
