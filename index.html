@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="apps.js"></script>
+    <title>Processo Seletivo Dti</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1 class="titulo">Meu Pet Econômico 🐾 </h1>
+            <p class="subtitulo">Encontre o melhor PetShop para você</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-formulario">
+            <div class="conteudo-formulario">
+                <div class="divformulario">
+                    <div class="formulario-header">
+
+                        <h1 class="formulario-titulo">Procure o melhor Petshop para você!</h1>
+                        <p class="formulario-subtitulo">Preencha as informações a baixo.</p>
+
+                    </div>
+                    <form id="formulario">
+                        <div class="campo">
+                            <label><strong>Data desejada:</strong></label>
+                            <br>
+                            <input type="date" name="data" id="data">
+                        </div>
+                        <br>
+                        <div class="campo">
+                            <label><strong>Cães pequenos:</strong></label>
+                            <br>
+                            <input placeholder="Insira o número de cães pequenos" type="number" name="caes-pequenos"
+                                id="caes-pequenos">
+                        </div>
+                        <br>
+                        <div class="campo">
+                            <label><strong>Cães grandes:</strong></label>
+                            <br>
+                            <input placeholder="Insira o número de cães grandes" type="number" name="caes-grandes"
+                                id="caes-grandes">
+                        </div>
+                        <br>
+                        <div class="botao-contain">
+                            <button type="button" onclick="btnEnviar()" class="botao">ENVIAR</button>
+                            <button type="submit" class="botao-limpar-campos">LIMPAR</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-resultado">
+                    <h1 id="resultadoMelhor"></h1>
+                </div>
+            </div>
+
+            <div class="itens">
+                <h1 class="itens-titulo">Petshops mais próximos</h1>
+                <div class="main-cards">
+                    <div class="cards">
+                        <img src="MeuCaninoFeliz.jpg" alt="PetShop Meu Canino Feliz">
+                        <div>
+                            <h1 class="nome-card">Meu Canino Feliz</h1>
+                            <p class="detalhes-card">📍<strong>Distância:</strong> 2 KM </p>
+                            <p class="detalhes-card">💲<strong>Preços:</strong> Cães pequenos - R$ 20,00 | Cães grandes - R$ 40,00</p>
+                            <p class="detalhes-card">(Finais de semana: 20% a mais do valor normal)</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="VaiRex.jpg" alt="PetShop Vai Rex">
+                        <div>
+                            <h1 class="name-card">Vai Rex</h1>
+                            <p class="detalhes-card">📍<strong>Distância:</strong> 1,7 KM </p>
+                            <p class="detalhes-card">💲<strong>Preços:</strong> Cães pequenos - R$ 15,00 | Cães grandes - R$ 50,00</p>
+                            <p class="detalhes-card">(Finais de semana: Cães pequenos - R$ 20,00 | Cães grandes R$
+                                55,00)</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="ChowChawgas.jpg" alt="PetShop ChowChawgas">
+                        <div>
+                            <h1 class="name-card">ChowChawgas</h1>
+                            <p class="detalhes-card">📍<strong>Distância:</strong> 800 M </p>
+                            <p class="detalhes-card">💲<strong>Preços:</strong> Cães pequenos - R$ 30,00 | Cães grandes - R$ 45,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
